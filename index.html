@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <main>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="container">
+                    <div id="display">
+                        <input id="result" type="text" class="form-control">
+                    </div>
+                    <div class="buttons">
+                        <div id="ac" class="button" onclick="allclr()">AC</div>
+                        <div id="divi" class="button" onclick="display('/')">/</div>
+                        <div id="multi" class="button" onclick="display('*')" >*</div>
+                        <div id="&" class="button">&</div>
+                        <div id="7" class="button" onclick="display('7')">7</div>
+                        <div id="8" class="button" onclick="display('8')">8</div>
+                        <div id="9"class="button" onclick="display('9')">9</div>
+                        <div id="minus" class="button" onclick="display('-')">-</div>
+                        <div id="4" class="button" onclick="display('4')">4</div>
+                        <div id="5" class="button" onclick="display('5')">5</div>
+                        <div id="6" class="button" onclick="display('6')">6</div>
+                        <div id="+" class="button" onclick="display('+')">+</div>
+                        <div id="1" class="button" onclick="display('1')">1</div>
+                        <div id="2" class="button" onclick="display('2')">2</div>
+                        <div id="3" class="button" onclick="display('3')">3</div>
+                        <div id="dot" class="button" onclick="display('.')">.</div>
+                        <div class="button" onclick="display('%')">%</div>
+                        <div id="0 "class="button" onclick="display('0')">0</div>
+                        <div class="button" onclick="clr()">clr</div>
+                        <div id="equal" class="button" onclick="equal()">=</div>
+                    </div>
+        
+                </div>
+    
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </main>
+       
+    
+</body>
+<script src="calc2.js"></script>
+</html>
